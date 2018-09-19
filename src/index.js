@@ -1,26 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ReactDom from 'react-dom';
+import App from 'App';
 
-require('./index.css');
-
-
-const obj = {
-  foo: {
-    bar: {
-      baz: 42,
-    },
-  },
-};
-
-const baz = obj?.foo ?.bar ?.baz; // 42
-
-class App extends Component {
-
-  render() {
-    return <div>
-      Hello world
-    </div>
-  }
-}
+import 'index.css';
 
 ReactDom.render(<App />, document.getElementById('app'));

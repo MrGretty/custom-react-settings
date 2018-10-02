@@ -1,3 +1,3 @@
 # custom-react-settings with babel 7
 
-clear initial applications with babel 7 and some proposal plugins 
+clear initial application with babel 7 and some proposal plugins 

@@ -1,7 +1,11 @@
+// @flow
 import React, { Component } from 'react';
 
-export default class App extends Component {
+type Props = {};
+
+export default class App extends Component<Props> {
+
   render() {
-    return <div>Hello world</div>;
+    return <div></div>;
   }
 }

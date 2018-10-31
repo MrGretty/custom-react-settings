@@ -1,3 +1,5 @@
+// @flow
+
 import React, { useState } from 'react';
 import { Content, Counter, ThemeChanger } from './content';
 import ThemeContext from './ThemeContext';
@@ -10,6 +12,8 @@ const getStyleByTheme = theme => {
 };
 
 function App() {
+  const s = 12;
+
   const [theme, changeTheme] = useState('default');
 
   return (

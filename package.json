@@ -8,18 +8,33 @@
     "react-scripts": "2.0.5"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-app-rewired eject"
   },
   "eslintConfig": {
-    "extends": "react-app",
-    "plugins": [
-      "react-hooks"
+    "extends": [
+      "airbnb",
+      "prettier",
+      "plugin:flowtype/recommended"
     ],
+    "plugins": [
+      "react-hooks",
+      "flowtype"
+    ],
+    "root": true,
+    "settings": {
+      "flowtype": {
+        "onlyFilesWithFlowAnnotation": false
+      }
+    },
     "rules": {
-      "react-hooks/rules-of-hooks": "error"
+      "react-hooks/rules-of-hooks": "error",
+      "flowtype/require-valid-file-annotation": [
+        2,
+        "always"
+      ]
     }
   },
   "browserslist": [
@@ -29,6 +44,16 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "eslint-plugin-react-hooks": "^0.0.0"
+    "@babel/plugin-proposal-decorators": "^7.1.2",
+    "@babel/plugin-proposal-optional-chaining": "^7.0.0",
+    "@babel/plugin-proposal-pipeline-operator": "^7.0.0",
+    "customize-cra": "^0.2.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-plugin-flowtype": "^3.0.0",
+    "eslint-plugin-react-hooks": "^0.0.0",
+    "flow-bin": "^0.85.0",
+    "prettier": "^1.14.3",
+    "react-app-rewired": "^1.6.2"
   }
 }

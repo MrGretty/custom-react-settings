@@ -2,8 +2,8 @@
  <PROJECT_ROOT>/node_modules/.*
  <PROJECT_ROOT>/build/.*
  <PROJECT_ROOT>/src/index\.js
- <PROJECT_ROOT>/serviceWorker.js
- <PROJECT_ROOT>/config-overrides.js
+ <PROJECT_ROOT>/src/serviceWorker\.js
+ <PROJECT_ROOT>/config-overrides\.js
 [include]
 
 [libs]
